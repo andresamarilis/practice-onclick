@@ -14,11 +14,18 @@ buttonChangeTitle.addEventListener('click', () => {
     document.getElementById("h2").innerHTML = "New Title!"; 
 })
 
-//code to hide the paragraph in card 3
+//code to hide and unhide the paragraph in card 3. Might need to make a loop for this. 
 let buttonChangeText3 = document.querySelector('.button3'); 
 
+
 buttonChangeText3.addEventListener('click', () => {
-    document.getElementById("p3").hidden = true; 
+    document.getElementById("p3").hidden = true;
+
+    buttonChangeText3.addEventListener('click', () => {
+        document.getElementById("p3").hidden = false;
+         
+    })
+
 })
 
 
